@@ -1,0 +1,14 @@
+<?php 
+Class About extends MY_Controller
+{
+	function __construct()
+	{
+		parent::__construct();
+	}
+	
+	function index()
+	{
+		$this->data['temp'] = 'site/about/index';	
+		$this->load->view('site/layout',$this->data);
+	}
+}
